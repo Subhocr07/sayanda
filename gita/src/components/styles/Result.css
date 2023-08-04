@@ -1,0 +1,94 @@
+@media screen and (min-width: 570px) {
+    .prompt-section .prompt-answer {
+       background-color: blue;
+    }
+    .chapter{
+        background-color: blue;
+    }
+}
+
+.prompt-section{
+    padding-top: 45px;
+}
+.prompt-container {
+    height: 50px;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    background: linear-gradient(90deg, rgba(255, 201, 138, 0.98) 0%, rgba(250, 177, 118, 0.98) 8.84%, rgba(244, 149, 93, 0.98) 35.54%, rgba(238, 122, 70, 0.98) 52.5%, rgba(236, 120, 69, 0.98) 73.41%, rgba(232, 131, 75, 0.98) 86.75%, rgba(240, 139, 79, 0.98) 97.63%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+/* .prompt-section {
+    position: relative;
+    width: 20%;
+    top: -835px;
+    left: -60px;
+} */
+
+.prompt-section .prompt-submit {
+  
+    /* position: absolute; */
+    width: 50px;
+    height: 50px;
+    /* left: 1070px;
+    top: 435px; */
+    background: linear-gradient(90deg, #FFC98A -17.23%, #FEC385 -9.08%, #FAB176 -2.98%, #F4955D 2.86%, #EE7A46 15.32%, #EC7845 20.4%, #C25733 51.67%, #A33E26 72.25%, #912F1E 91.41%, #8A2A1B 99.41%, #8E2D1D 109.66%, #993823 119.17%, #AC4A2C 128.39%, #C6633A 137.41%, #E8834B 146.24%, #F08B4F 148.12%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+}
+
+.prompt-section .prompt-answer {
+    text-align: center;
+    min-width: 100%;
+    /* position: absolute; */
+    /* left: 450px;
+    top: 515px; */
+    /* height: 170.07px; */
+    background: linear-gradient(112.91deg, #FFC98A 7.18%, #FEC385 19.16%, #FAB176 28.65%, #F4955D 37.88%, #EC7845 48.37%, #EE7A46 63.35%, #C6633A 113.42%, #E8834B 124.39%, #F08B4F 136.98%);
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.chapter {
+        height: max-content;
+   min-width: 75vw;
+    text-align: center;
+    /* left: 450px;
+    top: 710px; */
+    /* position: absolute; */
+    background: linear-gradient(112.91deg, #FFC98A 7.18%, #FEC385 19.16%, #FAB176 28.65%, #F4955D 37.88%, #EC7845 48.37%, #EE7A46 63.35%, #C6633A 113.42%, #E8834B 124.39%, #F08B4F 136.98%);
+    border-radius: 7px;
+}
+
+.chapter .chapter-name {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 24px;
+    color: #5B5B5B;
+    margin: 10px 10px;
+}
+
+.chapter .chapter-description {
+    /* font-family: 'Inter';
+	font-style: normal; */
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #AA5656;
+    margin: 10px 10px;
+}
+
+p.chapter-description, p.chapter-name{
+    text-align: center;
+    color: #ab2929;
+    font-weight: 600;
+}
+
+textarea#x {
+    height: 12rem;
+    min-width: 100%;
+}
+

@@ -1,0 +1,107 @@
+
+html {
+  font-family: 'Lato', sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  height: 100%;
+}
+body {
+  background-color: $white;
+  font-family: 'Lato', sans-serif;
+  color: $paragraph-color;
+  font-size: 16px;
+  line-height: normal;
+  font-weight: 400;
+  // padding-top: 74px;
+  // @include sm {
+  //   padding-top: 78px;
+  // }
+  // @include md {
+  //   padding-top: 80px;
+  // }
+  // @include lg {
+  //   padding-top: 0;
+  // }
+}
+a {
+  color: $primary-color;
+  @include transition(all 0.5s);
+  text-decoration: none;
+  background-color: transparent;
+  &:hover,
+  &:focus {
+    color: $primary-color;
+    text-decoration: none;
+    outline: 0;
+  }
+}
+p {
+  margin: 0 0 20px 0;
+  font-size: 15px;
+  color: $white;
+  font-weight: normal;
+  line-height: 22px;
+  font-family: $inter-font;
+  span {
+    color: $primary-color;
+  }
+}
+strong, b {
+  font-weight: 700;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 10px 0;
+  padding: 0;
+  color: $black;
+  font-weight: 400;
+  font-family: $berkshire-font;
+  line-height: normal;
+}
+h1 {
+  font-size: 41px;
+  font-weight: 900;
+  @include lg {
+    font-size: 48px;
+  }
+  @include xl {
+    font-size: 60px;
+  }
+}
+h2 {
+  font-size: 36px;
+  font-weight: 900;
+  margin-bottom: 20px;
+  @include sm {
+    font-size: 38px;
+  }
+  @include lg {
+    font-size: 44px;
+  }
+}
+h3 {
+  font-size: 26px;
+  font-weight: 700;
+}
+h4 {
+  font-size: 20px;
+  font-weight: 700;
+  @include sm {
+    font-size: 22px;
+  }
+}
+h5 {
+  font-size: 18px;
+  font-weight: 700;
+  @include sm {
+    font-size: 20px;
+  }
+}
+h6 {
+  font-size: 16px;
+  font-weight: 700;
+  @include sm {
+    font-size: 18px;
+  }
+}
+

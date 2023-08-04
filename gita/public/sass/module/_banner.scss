@@ -1,0 +1,136 @@
+.site {
+  &-banner {
+    position: relative;
+    z-index: 1;
+    background:  $bg-black;
+    padding: 45px 0 60px;
+    @include xxl {
+      padding: 65px 0 80px;
+    }
+    @include rwd(1400) {
+      padding: 105px 0 132px;
+    }
+    .banner-content {
+      width: 100%;
+      .ban-text {
+        h1 {
+          font-weight: 400;
+          font-size: 42px;
+          background: linear-gradient(123.18deg, #FEC385 11.9%, #FAB176 25.44%, #F4955D 37.33%, #EC7845 45.56%, #EE7A46 57.73%, #C25733 68.86%, #A33E26 92.02%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          text-fill-color: transparent;
+          font-family: $berkshire-font;
+          margin-bottom: 20px;
+          @include md {
+            font-size: 48px;
+          }
+          @include lg {
+            font-size: 55px;
+          }
+          @include xl {
+            font-size: 65px;
+            margin-bottom: 25px;
+          }
+          @include xxl {
+            margin-bottom: 30px;
+            font-size: 75px;
+          }
+          @include rwd(1400) {
+            font-size: 92px;
+            margin-bottom: 60px;
+          }
+        }
+        p {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 22px;
+          color: $white;
+          margin-bottom: 0px;
+          font-family: $inter-font;
+          @include xl {
+            font-size: 22px;
+            line-height: 28px;
+          }
+          @include xxl {
+            font-size: 26px;
+            line-height: 31px;
+          }
+        }
+      }
+      .btn-wrap {
+        margin-top: 20px;
+        @include flexbox();
+        @include align-items(center);
+        @include justify-content(center);
+        @include flex-direction(column);
+        @include sm {
+          font-size: 48px;
+          @include flex-direction(row);
+        }
+        @include lg {
+          @include justify-content(flex-start)
+        }
+        @include xl {
+          margin-top: 30px;
+        }
+        @include rwd(1400) {
+          margin-top: 50px;
+        }
+        .btn {
+          margin: 10px 0;
+          @include sm {
+            margin: 0;
+            margin-right: 20px;
+          }
+          @include xl {
+            margin-right: 30px;
+          }
+          @include rwd(1400) {
+            margin-right: 50px;
+          }
+        }
+      }
+      .built-by {
+        @include flexbox();
+        @include align-items(center);
+        @include justify-content(center);
+        margin-top: 13px;
+        @include lg {
+          @include justify-content(flex-start)
+        }
+        img {
+          margin: 0 10px;
+        }
+      }
+      .col-lg-8 {
+        order: 2;
+        @include lg {
+          order: 1;
+        }
+      }
+      .col-lg-4 {
+        order: 1;
+        @include lg {
+          order: 2;
+        }
+      }
+      .banner-pic {
+        max-width: 250px;
+        margin: 0 auto 20px;
+        @include md {
+          max-width: 300px;
+        }
+        @include lg {
+          max-width: none;
+          margin: 0;
+        }
+      }
+      text-align: center;
+      @include lg {
+        text-align: left;
+      }
+    }
+  }
+}

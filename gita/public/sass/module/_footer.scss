@@ -1,0 +1,62 @@
+.footer {
+  background: #303030;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  @include lg{
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+  @include xxl {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  @include rwd(1400) {
+    padding-top: 84px;
+    padding-bottom: 84px;
+  }
+}
+.ftr-menu {
+  @include flexbox();
+  @include align-items(center);
+  @include justify-content(center);
+  @include md {
+    @include justify-content(flex-end);
+  }
+  ul {
+    @include flexbox();
+    @include align-items(center);
+    @include justify-content(flex-end);
+    li {
+     margin: 0 10px 0;
+      @include md {
+        margin: 0 0 0 35px;
+      }
+      @include lg {
+        margin-left: 55px;
+      }
+      @include xxl {
+        margin-left: 74px;
+      }
+      a {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        color: $white;
+        font-family: $popins-font;
+        @include lg {
+          font-size: 22px;
+          line-height: 32px;
+        }
+        @include xxl {
+          font-size: 26px;
+          line-height: 39px;
+        }
+      }
+      &:hover {
+        a {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}
