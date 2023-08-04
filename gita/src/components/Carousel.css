@@ -1,0 +1,11 @@
+.q_yt {
+    overflow-x: auto;
+    white-space: nowrap;
+    margin: 20px 0;
+}
+
+.q_yt .carousel {
+    display: inline-block;
+    margin-right: 10px;
+    width: 300px;
+}

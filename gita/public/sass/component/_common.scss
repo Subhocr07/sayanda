@@ -1,0 +1,114 @@
+.common-heading {
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 42px;
+  font-family: $berkshire-font;
+  @include sm {
+    font-size: 38px;
+    line-height: 44px;
+  }
+  @include md {
+    font-size: 42px;
+    line-height: 54px;
+  }
+  @include lg {
+    font-size: 55px;
+    line-height: 65px;
+  }
+  @include xxl {
+    font-size: 65px;
+    line-height: 80px;
+  }
+  @include rwd(1400) {
+    font-size: 92px;
+    line-height: 114px;
+  }
+  &.black {
+    color: $black;
+  }
+  &.gradient-color {
+    background: linear-gradient(114.84deg, #FFC98A 0.37%, #FEC385 11.08%, #FAB176 25.67%, #F4955D 42.44%, #EE7A46 55.24%, #EC7845 55.99%, #C25733 74.76%, #A33E26 99.01%, #912F1E 110.99%, #8A2A1B 116.22%, #8E2D1D 129.16%, #993823 141.18%, #AC4A2C 152.84%, #C6633A 164.24%, #E8834B 175.4%, #F08B4F 177.78%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+}
+.sub-heading {
+  font-family: $popins-font;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  background: linear-gradient(125.49deg, #FFFFFF -39.84%, #FEC385 1392.58%, #FAB176 3344.78%, #F4955D 5587.09%, #EE7A46 7300.55%, #EC7845 7400.27%, #C25733 9911.54%, #A33E26 12175%, #912F1E 14103.02%, #8A2A1B 15456.87%, #8E2D1D 17188.46%, #993823 18796.16%, #AC4A2C 20355.5%, #C6633A 21881.6%, #E8834B 23374.46%, #F08B4F 23691.76%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  @include md {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  @include lg {
+    font-size: 26px;
+    line-height: 36px;
+  }
+  @include xl {
+    font-size: 30px;
+    line-height: 42px;
+  }
+  @include xxl {
+    font-size: 36px;
+    line-height: 54px;
+  }
+}
+.sub-text {
+  font-family: $popins-font;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: $white;
+  @include md {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  @include xl {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  li {
+    margin-bottom: 10px;
+    color: $paragraph-color;
+    font-family: $lato-font;
+    font-weight: 400;
+    font-size: 15px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &.two-col {
+    column-count: 1;
+    @include sm {
+      column-count: 2;
+    }
+  }
+  &.mb-12 {
+    li {
+      margin-bottom: 12px;
+    }
+  }
+  &.bulleted-list {
+    li {
+      background: url('../images/bullet.svg') no-repeat 0 3.5px;
+      background-size: 12px;
+      padding-left: 25px;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+

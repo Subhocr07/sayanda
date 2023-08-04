@@ -1,0 +1,437 @@
+.feature-section {
+  background: url('../images/feature-bg.jpg') no-repeat;
+  background-size: cover;
+  padding: 30px 0 50px;
+  background-position: center;
+  @include lg {
+    background-position: 0 0;
+    padding: 30px 0 300px;
+  }
+}
+.feature-card-wrapper {
+  @include flexbox();
+  @include align-items(center);
+  @include justify-content(center);
+  padding-top: 120px;
+  @include sm {
+    padding-top: 0;
+  }
+  @include lg {
+    @include align-items(flex-end);
+    @include justify-content(flex-end);
+  }
+}
+.feature-card {
+  background: $white;
+  @include border-radius(29px);
+  padding: 15px 25px;
+  height: auto;
+  width: 300px;
+  position: relative;
+  @include flexbox();
+  @include align-items(center);
+  @include flex-wrap(wrap);
+  margin-bottom: 20px;
+  @include sm {
+    padding: 0 25px 15px 115px;
+    height: 410px;
+    width: 350px;
+    @include align-items(flex-end);
+    @include flex-wrap(nowrap);
+  }
+  @include md {
+    height: 450px;
+    width: 360px;
+  }
+  @include lg {
+    margin-bottom: 0;
+  }
+  @include xl {
+    height: 465px;
+    width: 400px;
+    padding: 0 25px 15px 115px;
+  }
+  @include xxl {
+    padding: 0 25px 15px 127px;
+    height: 490px;
+    width: 420px;
+  }
+  .feature-pic {
+    width: 195px;
+    height: 270px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    @include border-radius(29px);
+    margin: 0 auto;
+    margin-top: -100px;
+    @include sm {
+      position: absolute;
+      top: 75px;
+      left: -95px;
+      margin-top: 0;
+    }
+    @include xl {
+      width: 225px;
+      height: 312px;
+      top: 60px;
+      left: -127px;
+    }
+    @include xxl {
+      width: 239px;
+      height: 344px;
+    }
+    img {
+      @include border-radius(29px);
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .text-box {
+    min-height: 100px;
+    @include flexbox();
+    @include align-items(center);
+    @include justify-content(space-between);
+    @include flex-direction(column);
+    text-align: center;
+    padding-top: 20px;
+    @include sm {
+      min-height: 250px;
+      text-align: left;
+      padding-top: 0;
+      @include align-items(flex-start);
+    }
+    p {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      color: $black;
+      font-family: $popins-font;
+      @include xl {
+        font-size: 22px;
+        line-height: 32px;
+      }
+      @include xxl {
+        font-size: 26px;
+        line-height: 39px;
+      }
+    }
+    .cta-link {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 22px;
+      color: $black;
+      font-family: $popins-font;
+      text-decoration: underline;
+      @include xl {
+        font-size: 20px;
+        line-height: 30px;
+      }
+      @include xxl {
+        font-size: 26px;
+        line-height: 39px;
+      }
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+.form-section {
+  padding: 50px 0 60px;
+  @include xs {
+    padding: 50px 0 120px;
+  }
+  @include lg {
+    padding: 120px 0 300px;
+  }
+  @include xxl {
+    padding: 120px 0 500px;
+  }
+}
+.text-header {
+  position: relative;
+  z-index: 2;
+}
+.form-outr {
+  position: relative;
+  z-index: 1;
+}
+.form-wrap {
+  @include flexbox();
+  @include align-items(flex-start);
+  @include justify-content(center);
+  @include flex-wrap(wrap);
+  gap: 15px;
+  @include xs {
+    @include flex-wrap(nowrap);
+    gap: 0px;;
+  }
+  input[type="text"] {
+    background: linear-gradient(90deg, rgba(255, 201, 138, 0.98) 0%, rgba(250, 177, 118, 0.98) 8.84%, rgba(244, 149, 93, 0.98) 35.54%, rgba(238, 122, 70, 0.98) 52.5%, rgba(236, 120, 69, 0.98) 73.41%, rgba(232, 131, 75, 0.98) 86.75%, rgba(240, 139, 79, 0.98) 97.63%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    @include border-radius(10px);
+    width: 300px;
+    height: 45px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: $white;
+    font-family: $popins-font;
+    padding: 15px 20px;
+    border: 0;
+    @include xs {
+      width: calc(100% - 45px);
+    }
+    @include sm {
+      width: 450px;
+    }
+    @include md {
+      width: 530px;
+    }
+    @include lg {
+      padding: 29px 23px 16px;
+      width: 600px;
+      height: 60px;
+      font-size: 20px;
+      line-height: 28px;
+    }
+    @include xl {
+      height: 70px;
+      font-size: 23px;
+      line-height: 34px;
+    }
+    @include xxl {
+      width: 717px;
+      height: 80px;
+    }
+  }
+  .input-wrap {
+    text-align: center;
+  }
+  .submit-btn {
+    background: linear-gradient(90deg, #FFC98A -17.23%, #FEC385 -9.08%, #FAB176 -2.98%, #F4955D 2.86%, #EE7A46 15.32%, #EC7845 20.4%, #A33E26 76.45%, #912F1E 101.3%, #8A2A1B 111.24%, #8E2D1D 123.67%, #993823 132.9%, #AC4A2C 145.68%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    @include border-radius(100px);
+    width: 45px;
+    height: 45px;
+    min-width: 45px;
+    border: 0;
+    @include flexbox();
+    @include align-items(center);
+    @include justify-content(center);
+    margin-left: 10px;
+    @include lg {
+      width: 60px;
+      height: 60px;
+      min-width: 60px;
+      margin-left: 20px;
+    }
+    @include xl {
+      width: 70px;
+      height: 70px;
+      min-width: 70px;
+    }
+    @include xxl {
+      width: 80px;
+      height: 80px;
+      min-width: 80px;
+    }
+  }
+}
+.select-question {
+  @include flexbox();
+  @include align-items(center);
+  @include justify-content(center);
+  @include flex-wrap(wrap);
+  gap: 12px;
+  margin-top: 15px;
+  @include lg {
+    gap: 18px;
+    margin-top: 30px;
+  }
+  a {
+    background: #D9D9D9;
+    @include border-radius(21px);
+    padding: 4px 12px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: $black;
+    font-family: $inter-font;
+    white-space: nowrap;
+    @include lg {
+      font-size: 15px;
+      line-height: 22px;
+      padding: 2px 14px;
+    }
+    @include xxl {
+      font-size: 19px;
+      line-height: 24px;
+    }
+  }
+}
+.chakra-outr {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  margin-top: 45px;
+  @include sm {
+    width: 50%;
+  }
+  @include lg {
+    margin-top: 110px;
+  }
+  @include xxl {
+    width: 60%;
+    margin-top: 150px;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+	.mandala {
+		animation: App-logo-spin infinite 30s linear;
+	}
+}
+@keyframes App-logo-spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+.about-section {
+  text-align: center;
+  @include lg {
+    text-align: left;
+  }
+  .safty-text {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    @include lg {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+}
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 1rem 2rem;
+  grid-template-rows: masonry;
+  @include sm {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include md {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @include lg {
+    grid-gap: 1rem 3rem;
+  }
+}
+.gal-pic {
+  margin: 0;
+  display: inline-block;
+  margin-bottom: 0px;
+  width: 100%;
+ }
+ .gal-pic img {
+  width: 500px;
+  object-fit: cover;
+  @include border-radius(52px);
+}
+.company-card-container {
+  column-count: 1;
+  column-gap: 20px;
+  padding-top: 100px;
+  position: relative;
+  @include md {
+    column-count: 2;
+  }
+  @include lg {
+    column-count: 3;
+    column-gap: 30px;
+  }
+}
+.company-card {
+  background: #7C7878;
+  @include border-radius(28.9368px);
+  padding: 20px 18px;
+  margin-bottom: 30px;
+  @include md {
+    padding: 26px 24px;
+  }
+}
+.company-card-header {
+  background: rgba(255, 201, 138, 0.98);
+  box-shadow: 0px 2.68328px 2.68328px rgba(0, 0, 0, 0.25);
+  @include border-radius(6.7082px);
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  color: $white;
+  font-family: $inter-font;
+  padding: 12px;
+  margin-bottom: 18px;
+  @include sm {
+    padding: 19px 13px 15px;
+    margin-bottom: 27px;
+    font-size: 15.4289px;
+    line-height: 19px;
+  }
+}
+.company-card-body {
+  background: linear-gradient(90deg, rgba(255, 201, 138, 0.98) 0%, rgba(250, 177, 118, 0.98) 8.84%, rgba(244, 149, 93, 0.98) 35.54%, rgba(238, 122, 70, 0.98) 52.5%, rgba(236, 120, 69, 0.98) 73.41%, rgba(232, 131, 75, 0.98) 86.75%, rgba(240, 139, 79, 0.98) 97.63%);
+  box-shadow: 0px 2.65952px 2.65952px rgba(0, 0, 0, 0.25);
+  @include border-radius(6.7082px);
+  padding: 19px 13px 7px;
+}
+.company-card-body p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: $black;
+  font-family: $inter-font;
+  @include sm {
+    font-size: 15.2923px;
+    line-height: 19px;
+  }
+}
+.updesh {
+  border: 1px solid $primary-color;
+  width: 242.69px;
+  padding: 5px;
+  @include border-radius(9px);
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: auto;
+  @include lg {
+    position: static;
+    @include transform(rotate(-9.51deg));
+    margin-top: 100px;
+    margin-left: 25px;
+    margin-bottom: 60px;
+  }
+}
+.updesh-inr {
+  width: 229.11px;
+  height: 49.82px;
+  border: 5px solid $primary-color;
+  @include border-radius(9px);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: $white;
+  text-align: center;
+  line-height: 38px;
+  font-family: $popins-font;
+  @include sm {
+    font-size: 20.0819px;
+    line-height: 30px;
+  }
+}
