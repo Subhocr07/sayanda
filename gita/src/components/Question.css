@@ -1,0 +1,7 @@
+div#signInDiv {
+    display: flex;
+    align-items: center;
+    padding: 19px;
+    margin: 11px;
+    justify-content: center;
+}

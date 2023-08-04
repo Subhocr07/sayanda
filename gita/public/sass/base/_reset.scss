@@ -1,0 +1,416 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol,
+ul {
+    list-style: none;
+}
+blockquote,
+q {
+    quotes: none;
+}
+blockquote {
+    &:before,
+    &:after {
+        content: '';
+        content: none;
+    }
+}
+q {
+    &:before,
+    &:after {
+        content: '';
+        content: none;
+    }
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+body {
+    text-rendering: optimizeLegibility;
+    // -webkit-font-smoothing: antialiased;
+    // -moz-font-smoothing: antialiased;
+    // -o-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+.clearfix:after,
+.clearfix:before {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.u-mobile-center {
+    text-align: center;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    border: 0;
+}
+* {
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+/*--------- Common CSS Start -----------------*/
+
+.transparent {
+    background-color: transparent!important;
+}
+.no_padding {
+    padding: 0px!important;
+}
+.full_width {
+    width: 100%;
+}
+.left_padding {
+    padding-right: 0px!important;
+}
+.right_padding {
+    padding-left: 0px!important;
+}
+.small_padding {
+    padding: 0px 5px;
+}
+.small_padding2 {
+    padding: 0px 2px!important;
+}
+.medium_padding {
+    padding: 0px 10px;
+}
+.padding_right_only5 {
+    padding-left: 0px!important;
+    padding-right: 5px!important;
+}
+.padding_left_only5 {
+    padding-left: 5px!important;
+    padding-right: 0px!important;
+}
+.padding_vertical40 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.padding_vertical25 {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.padding_vertical15 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.padding_vertical10 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.padding_vertical10_only {
+    padding: 10px 0px;
+}
+.padding_vertical5 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.no_padding_large {
+    padding: 0px;
+}
+.padding_horizontal5 {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.padding_horizontal10 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.padding_horizontal0 {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.no_both_side_padding {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.padding_vertical20 {
+    padding: 20px 0;
+}
+.padding_vertical25-10 {
+    padding: 25px 10px;
+}
+.padding_25 {
+    padding: 25px;
+}
+.padding_20 {
+    padding: 20px;
+}
+.padding_top20 {
+    padding-top: 20px;
+}
+.padding_10 {
+    padding: 10px;
+}
+.padding_15 {
+    padding: 15px;
+}
+.padding_left10 {
+    padding-left: 10px!important;
+}
+.right_padding5 {
+    padding-right: 5px;
+}
+.left_padding_only5 {
+    padding: 0px 0px 0px 5px!important;
+}
+.right_padding_only5 {
+    padding: 0px 5px 0px 0px!important;
+}
+.left_padding_only10 {
+    padding: 0px 0px 0px 10px!important;
+}
+.right_padding_only10 {
+    padding: 0px 10px 0px 0px!important;
+}
+.left_padding5 {
+    padding-left: 5px;
+}
+.padding_5 {
+    padding: 5px!important;
+}
+.left_align_padding {
+    padding: 0px 5px 0px 0px;
+}
+.right_align_padding {
+    padding: 0px 0px 0px 5px;
+}
+.no_margin_bottom {
+    margin-bottom: 0px!important;
+}
+.no_margin_top {
+    margin-top: 0px!important;
+}
+.color_white {
+    background-color: #fff!important;
+}
+.padding_2 {
+    padding: 2px!important;
+}
+.double_padding {
+    padding-right: 30px;
+    padding-left: 30px;
+}
+.margin_top10 {
+    margin-top: 10px;
+}
+.margin_top15 {
+    margin-top: 15px;
+}
+.margin_top5 {
+    margin-top: 5px;
+}
+.margin_left5 {
+    margin-left: 5px;
+}
+.margin_left10 {
+    margin-left: 10px;
+}
+.margin_right5 {
+    margin-right: 5px;
+}
+.margin_right10 {
+    margin-right: 10px;
+}
+.margin_left30 {
+    margin-left: 30px;
+}
+.margin_left25 {
+    margin-left: 25px;
+}
+.margin_bottom5 {
+    margin-bottom: 5px!important;
+}
+.margin_bottom10 {
+    margin-bottom: 10px!important;
+}
+.margin_bottom15 {
+    margin-bottom: 15px!important;
+}
+.margin_bottom20 {
+    margin-bottom: 20px!important;
+}
+.no_margin {
+    margin: 0px;
+}
+.margin_top20 {
+    margin-top: 20px;
+}
+.margin_top40 {
+    margin-top: 40px;
+}
+.margin_top50 {
+    margin-top: 50px;
+}
+.margin_top110 {
+    margin-top: 110px;
+}
+.full_height {
+    height: 100%;
+}
+.float_last_child:last-child {
+    float: left!important;
+}
+a:hover,
+a:focus {
+    -webkit-transition: background-color 300ms linear;
+    -moz-transition: background-color 300ms linear;
+    -o-transition: background-color 300ms linear;
+    -ms-transition: background-color 300ms linear;
+    transition: background-color 300ms linear;
+    text-decoration: none;
+}
+button:hover,
+button:focus {
+    -webkit-transition: background-color 300ms linear;
+    -moz-transition: background-color 300ms linear;
+    -o-transition: background-color 300ms linear;
+    -ms-transition: background-color 300ms linear;
+    transition: background-color 300ms linear;
+    text-decoration: none;
+}
+.no_border {
+    border: none !important;
+}
+.no_padding_bottom {
+    padding-bottom: 0px !important;
+}
+.left {
+    float: left;
+}
+.display-inline {
+    display: inline-block;
+}
+.relative-position{
+    position: relative;
+}
+a, a:active, a:focus {
+outline: none;
+}
+input:hover,input:active,input:focus{
+    outline: none;
+}
+.no-bg{
+    background-color: transparent !important;
+}
+/*-------- Common CSS end ----------------*/
